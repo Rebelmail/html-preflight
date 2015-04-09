@@ -1,6 +1,6 @@
 {
   "name": "html-preflight",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "The HTML email preflight process, maximing compression without distortion",
   "main": "index.js",
   "scripts": {
