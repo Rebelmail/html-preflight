@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/rebelmail/preflight.git"
+    "url": "git://github.com/rebelmail/html-preflight.git"
   },
   "author": "Yamil Asusta @elbuo8",
   "license": "ISC",
