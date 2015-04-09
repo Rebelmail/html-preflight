@@ -1,0 +1,39 @@
+{
+  "name": "html-preflight",
+  "version": "0.3.0",
+  "description": "The HTML email preflight process, maximing compression without distortion",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "istanbul cover _mocha test/**/**.test.js -- -R spec",
+    "test": "mocha test/**/**.test.js"
+  },
+  "keywords": [
+    "html",
+    "email",
+    "preflight",
+    "uglify",
+    "minify",
+    "compress",
+    "shrink",
+    "css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rebelmail/preflight.git"
+  },
+  "author": "Yamil Asusta @elbuo8",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.9.0",
+    "bytes": "^1.0.0",
+    "colors": "^1.0.3",
+    "commander": "^2.6.0",
+    "html-autoprefixer": "^0.3.5",
+    "html-minifier": "^0.7.2",
+    "html-uglify": "0.1.1"
+  },
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "mocha": "^2.1.0"
+  }
+}
