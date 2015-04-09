@@ -27,7 +27,6 @@
     "async": "^0.9.0",
     "bytes": "^1.0.0",
     "colors": "^1.0.3",
-    "commander": "^2.6.0",
     "html-autoprefixer": "^0.3.5",
     "html-minifier": "^0.7.2",
     "html-uglify": "0.1.1"
