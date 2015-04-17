@@ -29,7 +29,7 @@
     "colors": "^1.0.3",
     "html-autoprefixer": "^0.3.5",
     "html-minifier": "^0.7.2",
-    "html-uglify": "1.0.0"
+    "html-uglify": "1.1.1"
   },
   "devDependencies": {
     "chai": "^2.0.0",
