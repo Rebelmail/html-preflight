@@ -1,17 +1,17 @@
 'use strict';
 
 var expect = require('chai').expect;
-var Preflight = require('./../lib/preflight');
+var HTMLPreflight = require('./../lib/preflight');
 
-describe('Preflight', function() {
+describe('HTMLPreflight', function() {
   describe('#constructor', function() {
     it('should not return null', function () {
-      var preflight = new Preflight();
+      var preflight = new HTMLPreflight();
       expect(preflight).to.exist;
     });
 
     it('should take a plugins array', function () {
-      var preflight = new Preflight([1,2,3]);
+      var preflight = new HTMLPreflight([1,2,3]);
       expect(preflight.plugins.length).to.equal(3);
     });
   });
@@ -19,7 +19,7 @@ describe('Preflight', function() {
   describe('#run', function () {
     var preflight;
     before(function() {
-      preflight = new Preflight();
+      preflight = new HTMLPreflight();
     });
     it('should return an error if a plugin failed', function(done) {
       var stub = function(html, cb) {
