@@ -13,19 +13,18 @@ var Minifier = require('html-preflight').MinifierPlugin;
 var minifier = new Minifier();
 var preflight = new HTMLPreflight([minifier.run.bind(minifier)]);
 
-
-preflight.run(htmlString, {stats: true}, function(err, finalHtml) {
+preflight.run(htmlString, { stats: true }, function(err, finalHtml) {
   console.log(arguments);
 });
-
 ```
 
 ## Documentation
 
 ### `HTMLPreflight(plugins)`
-Takes in an array of functions. This functions will run in the order they were 
-provided. Each will pass the resulting HTML string to the next function. 
-Always keep in mind that if your provided function must have access to its 
+
+Takes in an array of functions. This functions will run in the order they were
+provided. Each will pass the resulting HTML string to the next function.
+Always keep in mind that if your provided function must have access to its
 scope, you will probably have to bind it to it.
 
 ### `run(htmlString, options, callback)`

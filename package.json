@@ -4,8 +4,7 @@
   "description": "The HTML email preflight process, maximing compression without distortion",
   "main": "index.js",
   "scripts": {
-    "coverage": "istanbul cover _mocha test/**/**.test.js -- -R spec",
-    "test": "mocha test/**/**.test.js"
+    "test": "istanbul test _mocha -- --recursive"
   },
   "keywords": [
     "html",
@@ -24,15 +23,16 @@
   "author": "Yamil Asusta @elbuo8",
   "license": "ISC",
   "dependencies": {
-    "async": "^1.0.0",
+    "async": "^1.4.0",
     "bytes": "^2.1.0",
-    "colors": "^1.1.0",
+    "colors": "^1.1.2",
     "html-autoprefixer": "^0.3.7",
     "html-minifier": "^0.7.2",
     "html-uglify": "1.1.1"
   },
   "devDependencies": {
-    "chai": "^2.3.0",
+    "chai": "^3.2.0",
+    "istanbul": "^0.3.17",
     "mocha": "^2.2.5"
   }
 }
