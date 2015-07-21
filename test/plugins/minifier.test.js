@@ -2,28 +2,33 @@
 
 var expect = require('chai').expect;
 
-var Minifier = require('./../../lib/plugins').MinifierPlugin;
+var Minifier = require('../../lib/plugins').MinifierPlugin;
 
 describe('MinifierPlugin', function() {
   describe('#constructor', function() {
-    it('should not return nil', function() {
+    it('should not return null', function() {
       expect(new Minifier()).to.exist;
     });
-    it('should store opts', function() {
-      expect(new Minifier(true).opts).to.exist;
+
+    it('should store options', function() {
+      expect(new Minifier(true).options).to.exist;
     });
   });
+
   describe('#run', function() {
     var minifier;
+
     before(function() {
       minifier = new Minifier();
     });
+
     it('should return err if invalid input', function(done) {
       minifier.run('<htm', function(err) {
         expect(err).to.exist;
         done();
       });
     });
+
     it('should return result if valid input', function(done) {
       minifier.run('<html></html>', function(err, html) {
         expect(err).to.not.exist;
