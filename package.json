@@ -23,7 +23,7 @@
   "author": "Yamil Asusta @elbuo8",
   "license": "ISC",
   "dependencies": {
-    "async": "^1.4.0",
+    "async": "^1.4.2",
     "bytes": "^2.1.0",
     "colors": "^1.1.2",
     "html-autoprefixer": "^0.3.7",
