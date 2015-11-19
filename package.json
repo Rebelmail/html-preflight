@@ -24,16 +24,16 @@
   "license": "ISC",
   "dependencies": {
     "async": "^1.5.0",
-    "bytes": "^2.1.0",
+    "bytes": "^2.2.0",
     "colors": "^1.1.2",
-    "html-autoprefixer": "^0.3.7",
+    "html-autoprefixer": "^0.3.8",
     "html-minifier": "^1.0.0",
-    "html-uglify": "1.1.2",
+    "html-uglify": "1.1.3",
     "postcss-safe-parser": "^1.0.1"
   },
   "devDependencies": {
-    "chai": "^3.4.0",
-    "istanbul": "^0.4.0",
-    "mocha": "^2.3.3"
+    "chai": "^3.4.1",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4"
   }
 }
