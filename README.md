@@ -1,5 +1,6 @@
 # html-preflight
 
+[![Build Status](https://travis-ci.org/Rebelmail/html-preflight.svg?branch=master)](https://travis-ci.org/Rebelmail/html-preflight)
 [![NPM version](https://badge.fury.io/js/html-preflight.png)](http://badge.fury.io/js/html-preflight)
 
 HTMLPreflight is a runner of plugins that transform an email before sending it.
