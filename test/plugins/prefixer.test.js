@@ -11,7 +11,8 @@ describe('PrefixerPlugin', function() {
     });
 
     it('should store options', function() {
-      expect(new Prefixer(true).options).to.exist;
+      expect(new Prefixer(true).cheerioOptions).to.exist;
+      expect(new Prefixer(true).postcssOptions).to.exist;
     });
   });
 
